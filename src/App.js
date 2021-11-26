@@ -9,6 +9,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Login from './components/Login';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route exact path='/login' element={<Login />} />
           <Route exact path='/detail' element={<Detail />} />
           <Route exact path='/' element={<Home />} />
         </Routes>
