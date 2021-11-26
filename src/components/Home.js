@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ImgSlider from './ImgSlider'
 import Viewers from './Viewers'
-import Movies from './movies/Movies'
+import RecommendedMovies from './movies/RecommendedMovies'
 
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
         <Container>
             <ImgSlider />
             <Viewers />
-            <Movies />
+            <RecommendedMovies />
         </Container>
     )
 }
@@ -22,6 +22,7 @@ const Container = styled.main`
     padding: 0 calc(3.5vw +5px);
     position: relative;
     overflow-x: hidden;
+    padding-bottom: 50px;
 
     &:before {
         background: url("/images/home-background.png") center center/ cover
@@ -32,5 +33,6 @@ const Container = styled.main`
         left: 0;
         right: 0;
         bottom: 0;
+    
     }
 `
